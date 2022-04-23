@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p6l4tC6BPOtYxwJjfMUB63jFQoPvy9aSD+f1Nf+mOBa2HZ20ndmVTebMC64zfcV3P97Gr0vdJXQy8vQ3kK0e5A==",
+  "dgSpecHash": "u28cl5LCXVcr44Y8guTzioOkHszmdUU4uLO0Wsv2slx7ZWMhM3zBApJDu2a9YKdPHt2hmifz1EdUmKbpzC8gyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LMark\\source\\repos\\BlazorApp1\\BlazorApp1\\BlazorApp1.csproj",
+  "projectFilePath": "C:\\Users\\LMark\\source\\repos\\Blazor-Apps\\BlazorApp1\\BlazorApp1.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

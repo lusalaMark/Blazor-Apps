@@ -1,17 +1,27 @@
 ﻿@inherits LayoutComponentBase
 
+<div class="top-row px-4">
+   <a href="/" target="_blank">Mark</a>
+ </div>
 <div class="page">
+ 
     <div class="sidebar">
         <NavMenu />
     </div>
 
     <div class="main">
-        <div class="top-row px-4">
+       @* <div class="top-row px-4">
+            <h1>Welcome</h1>
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>
-
+        </div>*@
+        
         <div class="content px-4">
             @Body
         </div>
+       
     </div>
 </div>
+<div class="top-row px-4">
+            <h6>Welcome</h6>
+            <a href="/" target="_blank">Mark</a>
+        </div>

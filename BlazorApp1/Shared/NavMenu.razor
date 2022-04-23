@@ -1,27 +1,67 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
+﻿@*<div class="top-row pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">BlazorApp1</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
-</div>
+</div> *@
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
+                <span class="oi oi-home" aria-hidden="true"></span> DashDoard
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="saccoAssuranceManagement">
+                <span class="oi oi-home" aria-hidden="true"></span> SA Management
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            <NavLink class="nav-link" href="systemAdministation">
+                <span class="oi oi-home" aria-hidden="true"></span> System Administration 
             </NavLink>
         </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="humanResourceManagement">
+                <span class="oi oi-plus" aria-hidden="true"></span> HR Management
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="accountsManagement">
+                <span class="oi oi-plus" aria-hidden="true"></span> Accounts Management
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="frontOfficeManagement">
+                <span class="oi oi-plus" aria-hidden="true"></span> FOSA Management
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="procumentManagement">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> P.A Management
+            </NavLink>
+        </li> 
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="registryManagement">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Registry Management
+            </NavLink>
+        </li> 
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="customerRelationshipManagement">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> CR Management
+            </NavLink>
+        </li> 
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="creditManagement">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Credit Management
+            </NavLink>
+        </li> 
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="microCreditManagement">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> M.C Management
+            </NavLink>
+        </li> 
     </ul>
 </div>
 
