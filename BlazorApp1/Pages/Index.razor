@@ -3,3 +3,12 @@
 <h1>Hello, MLusala!</h1>
 Welcome to Kimbilio Daima Sacco
 <SurveyPrompt Title="How is Vanguard Finacials System?" />
+
+<AuthorizeView>
+    <Authorized>
+        <p>Welcome, @context.User.Identity.Name</p>
+    </Authorized>
+    <NotAuthorized>
+        <p>You are signed Out!!</p>
+    </NotAuthorized>
+</AuthorizeView>

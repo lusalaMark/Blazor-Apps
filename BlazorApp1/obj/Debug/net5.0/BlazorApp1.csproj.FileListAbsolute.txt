@@ -72,3 +72,13 @@ C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\Pages\
 C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\Pages\RegistryManagement.razor.g.cs
 C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\Pages\SaccoAssuranceManagement.razor.g.cs
 C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\Pages\SystemAdministation.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\SysAdministation\Currencies.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\SysAdministation\Currencies.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\SysAdministation\Banks.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\SysAdministation\Branches.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\SysAdministation\Companies.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\RazorDeclaration\SysAdministation\PostingPeriods.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\SysAdministation\Banks.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\SysAdministation\Branches.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\SysAdministation\Companies.razor.g.cs
+C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\obj\Debug\net5.0\Razor\SysAdministation\PostingPeriods.razor.g.cs
