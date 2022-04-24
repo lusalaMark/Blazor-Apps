@@ -82,6 +82,13 @@ using BlazorApp1.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 1 "C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\Shared\MainLayout.razor"
+using BlazorApp1.Data;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
@@ -89,6 +96,18 @@ using BlazorApp1.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 44 "C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\Shared\MainLayout.razor"
+      
+    public void Logout()
+    {
+        ((CustomAuthenticatioStateProvider)AuthenticationStateProvider).MarkUserAsLoggedOut();
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
     }
 }
 #pragma warning restore 1591

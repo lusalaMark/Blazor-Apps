@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace BlazorApp1.Shared
+namespace BlazorApp1.Pages
 {
     #line hidden
     using System;
@@ -82,7 +82,15 @@ using BlazorApp1.Shared;
 #line default
 #line hidden
 #nullable disable
-    public partial class SurveyPrompt : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\Pages\Login.razor"
+using BlazorApp1.Data;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
+    public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -90,15 +98,31 @@ using BlazorApp1.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 12 "C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\Shared\SurveyPrompt.razor"
+#line 37 "C:\Users\LMark\source\repos\Blazor-Apps\BlazorApp1\Pages\Login.razor"
        
-    // Demonstrates how a parent component can supply parameters
-    [Parameter]
-    public string Title { get; set; }
+    private User user;
+
+    protected override Task OnInitializedAsync()
+    {
+        user = new User();
+        return base.OnInitializedAsync();
+    }
+
+    private async Task<bool> ValidateUser()
+    {
+        ((CustomAuthenticatioStateProvider)AuthenticationStateProvider).MarkUserAsAuthenticated(user.EmailAddress);
+        NavigationManager.NavigateTo("/");
+        await sessionStorage.SetItemAsync("emailaddress", user.EmailAddress);
+        return await Task.FromResult(true);
+    }
+
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.SessionStorage.ISessionStorageService sessionStorage { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
     }
 }
 #pragma warning restore 1591

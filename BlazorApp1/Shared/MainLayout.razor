@@ -1,4 +1,6 @@
-﻿@inherits LayoutComponentBase
+﻿@using BlazorApp1.Data
+@inherits LayoutComponentBase
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
 @*<div class="top-row px-4">
    <a href="/" target="_blank">---------------------------</a>
@@ -9,6 +11,17 @@
  </div>*@
 
 <div class="top-row px-4">
+    <div class="top-row px-4">      
+        <AuthorizeView>
+            <Authorized>
+                <a href="/login" @onclick = "(()=> Logout())" >Logout</a>
+            </Authorized>
+            <NotAuthorized>
+                <a href="/login">Login</a>
+            </NotAuthorized>
+        </AuthorizeView>
+        <a href="https://docs.microsoft.com/en-us/aspnet/" target="_blank">About</a>
+    </div>
    <a href="/" target="_blank">Mark</a>
  </div>
 
@@ -18,19 +31,19 @@
         <NavMenu />
     </div>
 
-    <div class="main">
-       @* <div class="top-row px-4">
-            <h1>Welcome</h1>
-            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-        </div>*@
-        
+    <div class="main"> 
         <div class="content px-4">
             @Body
-        </div>
-       
+        </div>    
     </div>
 </div>
 <div class="top-row px-4">
             <h6>Welcome</h6>
             <a href="/" target="_blank">Mark</a>
         </div>
+@code{
+    public void Logout()
+    {
+        ((CustomAuthenticatioStateProvider)AuthenticationStateProvider).MarkUserAsLoggedOut();
+    }
+}

@@ -1,5 +1,6 @@
 
 using BlazorApp1.Data;
+using Blazored.SessionStorage;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -30,8 +31,8 @@ namespace BlazorApp1
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            // services.AddSingleton<WeatherForecastService>();
             services.AddScoped<AuthenticationStateProvider, CustomAuthenticatioStateProvider>();
+            services.AddBlazoredSessionStorage();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

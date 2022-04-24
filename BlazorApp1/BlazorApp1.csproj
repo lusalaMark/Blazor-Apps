@@ -19,6 +19,7 @@
   <ItemGroup>
     <Content Remove="Pages\Authors.razor" />
     <Content Remove="Pages\Counter.razor" />
+    <Content Remove="Shared\LoginLayout.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +28,19 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="Pages\Authors.razor" />
+    <_ContentIncludedByDefault Remove="Shared\LoginLayout.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Blazored.SessionStorage" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\LoginLayout.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Shared\LoginLayout.razor" />
   </ItemGroup>
 
 </Project>
